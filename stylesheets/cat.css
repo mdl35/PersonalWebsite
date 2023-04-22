@@ -1,0 +1,101 @@
+/*DEVELOPER: Mario Levano IS117-002, Spring 2023 */
+* {
+    margin:0;
+    padding:0;
+}
+
+body {
+    background-color: #5fa0b7;
+}
+h1{
+    text-align: center;
+    text-decoration: underline;
+}
+.header {
+    background-image: url('images/header-background.jpg');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+.navbar {
+    background:#7393B3;
+    font-family: Merriweather;
+}
+.collapse navbar-collapse ul ul{
+    display: none;
+    position: absolute;
+}
+.collapse navbar-collapse ul ul li{
+    float: none;
+}
+.nav-link,
+.navbar-brand {
+    color: #fff;
+    cursor: pointer;
+}
+.nav-link {
+    margin-right: 1em !important;
+}
+.nav-link:hover {
+    color: #000;
+}
+.navbar-collapse {
+    justify-content: flex-end;
+}
+
+h1 {
+    font-size: 32px;
+    font-family: Merriweather;
+    font-weight: bold;
+    margin: 2em 2em 2em 2em;
+}
+
+p {
+    margin: 5em;
+    font-family: Merriweather;
+    font-weight: lighter;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+
+.column {
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+}
+
+.column img {
+    margin-top: 8px;
+    margin-left: 8px;
+    width: 100%;
+    alignment: center;
+}
+
+@media screen and (max-width: 800px) {
+    .column {
+        flex: 50%;
+        max-width: 50%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .column {
+        flex: 100%;
+        max-width: 100%;
+    }
+}
+footer {
+    background-color: #7393B3;
+    clear: both;
+
+}
+footer p {
+    text-align: center;
+    color: white;
+    padding: 1em 0;
+    font-family: Merriweather;
+}
